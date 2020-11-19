@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "44576733566",
+    "firebase_url": "https://pictureit-db667.firebaseio.com",
+    "project_id": "pictureit-db667",
+    "storage_bucket": "pictureit-db667.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44576733566:android:ad741b0a0f33c137a4db2f",
+        "android_client_info": {
+          "package_name": "com.example.pictureit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44576733566-jg2i1asab1m5csqglgadoestm0o6qvl2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pictureit",
+            "certificate_hash": "09cf12fb9fc97f55384f6c16e28721da9c99130c"
+          }
+        },
+        {
+          "client_id": "44576733566-3tvaa1sk7pf1pk08tf895k589d0i828b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB_A0QoJaa6_nrqZkiEtAa0I79Grzls6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44576733566-3tvaa1sk7pf1pk08tf895k589d0i828b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -29,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
                 onStart();
             }
         });
+        final Button createPrompt = findViewById(R.id.createPromptButton);
+        createPrompt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CreatePrompt.class);
+                startActivity(intent);
+            }
+        });
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
             TextView userName = findViewById(R.id.nameDisplay);

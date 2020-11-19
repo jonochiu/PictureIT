@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -30,8 +31,11 @@ public class CreatePrompt extends AppCompatActivity {
             public void onClick(View view) {
                 database = FirebaseDatabase.getInstance();
                 myRef = database.getReference("images");
-//                UserHelpClass helpClass = new Us
-                myRef.setValue(currentUser.getPhotoUrl());
+                EditText prompt = findViewById(R.id.promptName);
+                String promptEntry = prompt.getText().toString();
+                String picture = currentUser.getPhotoUrl().toString();
+                ImageCreator imageCreator = new ImageCreator(promptEntry, picture);
+                myRef.child(promptEntry).setValue(imageCreator);
             }
         });
     }

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreatePrompt"></activity>
+        <activity android:name=".GuessPrompt"></activity>
+        <activity android:name=".CreatePrompt" />
         <activity android:name=".LogIn" />
         <activity android:name=".MainActivity">
             <intent-filter>
